@@ -1,0 +1,1 @@
+apt purge -y nodejs libnode-dev libnode72 nodejs-doc && apt autoremove -y && apt --fix-broken install -y && curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && apt install -y nodejs && node -v && npm -v && cd ~/coredev && rm -rf node_modules package-lock.json && PUPPETEER_SKIP_DOWNLOAD=true npm install
